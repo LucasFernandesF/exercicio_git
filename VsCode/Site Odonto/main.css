@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #99c9bd;
+    color: #15212a;
+}
+
+header,
+section h2,
+section p {
+    font-family: 'Inconsolata', monospace;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: #15212a;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dentist {
+    height: 520px;
+    margin-right: 24px;
+}
+
+.brands-list img {
+    height: 52px;
+    margin-top: 12px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+    padding: 24px;
+}
+
+.raiox {
+    height: 360px;
+    padding: 24px 24px 24px 0;
+}
+
+#project {
+    background-color: #014634;
+}
+
+#project h2,
+#project p {
+    color: white;
+}
+
+section {
+    padding: 24px 0;
+    color: #182C61;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.contact-methods {
+    display: flex;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form textarea:focus,
+form input:focus {
+    outline-color: #014634;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #014634;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #014634;
+}
+
+.social-links img{
+    height: 52px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #99c9bd;
+    color: #15212a;
+    padding: 16px 0;
+}
+
+footer .container p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inconsolata', monospace;
+}
