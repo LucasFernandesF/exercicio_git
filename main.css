@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+form {
+    padding: 16px;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 8px;
+}
+
+.tarefa-concluida {
+    text-decoration: line-through;
+}
