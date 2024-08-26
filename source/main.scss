@@ -1,0 +1,105 @@
+@use './config/reset.scss';
+@use './config/variaveis.scss';
+
+@mixin flex-layout($justify: flex-start, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid-layout($colunas, $gap: 1%) {
+    display: grid;
+    grid-template-columns: repeat($colunas, 1fr);
+    column-gap: $gap;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variaveis.$corPrincipal;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    @include flex-layout(space-beetween);
+    padding: 16px 0;
+}
+
+.menu {
+    @include flex-layout();
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    @include grid-layout(3);
+    margin-top: 40px; 
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-button {
+    display: block;
+    background-color: variaveis.$corBotao;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.product-button:hover {
+    background-color: variaveis.$corBotaoHover;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        @include grid-layout(2, 3%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}
