@@ -1,0 +1,32 @@
+@use 'variaveis';
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+#formulario {
+
+    .form-container {
+        max-width: 100%;
+        min-height: 400px;
+    }
+
+    .form-control {
+        width: 24em;
+    }
+
+    .botao-formulario {
+        background-color: variaveis.$corSecundaria;
+        color: variaveis.$corPrincipal;
+         width: 6em;
+    }
+}
+
+.imagem-form {
+    max-height: 13em;
+}
+
+#like, 
+#formulario-enviado {
+    text-align: center;
+}
